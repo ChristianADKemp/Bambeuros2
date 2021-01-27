@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+.flex-column{
+  height: 50vh;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 10vh;
+}
+form {
+width: 80vw;
+flex-direction:column;
+margin-left: auto;
+margin-right: auto;
+}
+.wallet {
+width: 80vw;
+flex-direction: column;
+margin-left: auto;
+margin-right: auto;}
