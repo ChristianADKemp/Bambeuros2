@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { useHistory } from 'react-router-dom';
 
+
 function HomeScreen()  { 
     
     const history = useHistory();
@@ -8,7 +9,10 @@ function HomeScreen()  {
     function handleClick(e) {
         e.preventDefault();
         console.log('button clicked');
-        history.push("/dashboard");
+        if (localStorage.email === 'email'){ 
+            history.push("/dashboard"); 
+        }
+        
       }
   	return (
       	<button onClick={handleClick} type="submit" className="btn btn-primary btn-block">Login</button>
@@ -23,7 +27,7 @@ export default class Login extends Component {
 
                 <div className="form-group">
                     <label>Email address</label>
-                    <input type="email" className="form-control" />
+                    <input type="email" className="form-control" defaultValue=''/>
                 </div>
 
                 <div className="form-group">
