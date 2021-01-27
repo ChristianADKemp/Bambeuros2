@@ -97,28 +97,28 @@ export default class Register extends Component {
         return (
             <div>
                <form className="flex-column" onSubmit={this.onSubmit}>
-            <h3 className="text-success font-weight-bold">Sign Up</h3>
+                    <h3 className="text-success font-weight-bold">Sign Up</h3>
 
-            <div className="form-group">
-                <label>First name</label>
-                <input type="text" className="form-control"  value={this.state.firstName} onChange={this.onChangeFirstName}/>
-            </div>
+                    <div className="form-group">
+                        <label>First name</label>
+                        <input type="text" className="form-control"  value={this.state.firstName} onChange={this.onChangeFirstName}/>
+                    </div>
 
-            <div className="form-group">
-                <label>Last name</label>
-                <input type="text" className="form-control" value={this.state.lastName} onChange={this.onChangeLastName}/>
-            </div>
+                    <div className="form-group">
+                        <label>Last name</label>
+                        <input type="text" className="form-control" value={this.state.lastName} onChange={this.onChangeLastName}/>
+                    </div>
 
-            <div className="form-group">
-                <label>Email address</label>
-                <input type="email" className="form-control"  value={this.state.email} onChange={this.onChangeEmail} />
-            </div>
+                    <div className="form-group">
+                        <label>Email address</label>
+                        <input type="email" className="form-control"  value={this.state.email} onChange={this.onChangeEmail} />
+                    </div>
 
-            <div className="form-group">
-                <label>Password</label>
-                <input type="password" className="form-control" value={this.state.password} onChange={this.onChangePassword} />
-            </div>
-          <RegisterForm />  
+                    <div className="form-group">
+                        <label>Password</label>
+                        <input type="password" className="form-control" value={this.state.password} onChange={this.onChangePassword} />
+                    </div>
+            <RegisterForm /> 
         </form>
                 
                
