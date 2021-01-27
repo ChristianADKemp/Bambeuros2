@@ -119,10 +119,8 @@ export default class Register extends Component {
                         <input type="password" className="form-control" value={this.state.password} onChange={this.onChangePassword} />
                     </div>
             <RegisterForm /> 
-        </form>
-                
-               
-            </div>
+        </form>      
+    </div>
         );
     }
 }
